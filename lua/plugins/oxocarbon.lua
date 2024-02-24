@@ -1,9 +1,11 @@
-  return {
-      "nyoom-engineering/oxocarbon.nvim", 
-      name = "oxocarbon", 
-      priority = 1000,
-      config = function()
-        vim.opt.background = "dark"
-        vim.cmd.colorscheme "oxocarbon"
-      end
+return {
+  -- add dracula
+  { "Mofiqul/dracula.nvim" },
+  -- Configure LazyVim to load dracula
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "dracula",
+    },
+  },
 }

@@ -41,3 +41,8 @@ vim.api.nvim_set_keymap('n', '<leader>or',
 vim.api.nvim_set_keymap('n', '<leader>ot', "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true })
 
 
+-- remap changing split --
+vim.api.nvim_set_keymap('n', '<Right>', "<C-w>l", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Left>', "<C-w>h", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Up>', "<C-w>k", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Down>', "<C-w>j", { noremap = true, silent = true })
